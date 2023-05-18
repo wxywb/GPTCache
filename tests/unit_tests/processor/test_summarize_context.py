@@ -3,7 +3,7 @@ from transformers import pipeline, RobertaTokenizer
 
 
 def test_summarization_context_process():
-    summarizer = pipeline("summarization", model="facebook/bart-large-cnn")
+    summarizer = pipeline("summarization", model="ainize/bart-base-cnn")
     context_process = SummarizationContextProcess(summarizer, None, 512)
     chat = []
     chat.append(
